@@ -1,0 +1,39 @@
+body {
+  background-color: #FFFFFF;
+}
+
+.Server
+    {
+	font-family:tahoma;
+	font-size:14px;
+	color: #000000;
+	border-left: 2px solid #A9A9A9;
+	border-top: 2px solid #A9A9A9;
+	border-bottom: 2px solid #A9A9A9;
+	border-right: 2px solid #A9A9A9;
+	-border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius: 10px;
+	background-color:#808080;
+	padding: 4px;
+	}
+	
+table.Server th
+    {
+	font-family:tahoma;
+	font-size:14px;
+	color: #000000;
+	font-weight : bold;
+	background-color: #808080;
+	padding: 4px;
+	}
+	
+table.Server td
+    {
+	font-family:tahoma;
+	font-size:14px;
+	color: #000000;
+	font-weight : none;
+	background-color:#808080;
+	padding: 4px;
+	}
