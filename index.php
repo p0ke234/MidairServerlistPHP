@@ -1,5 +1,12 @@
 <?php
-$json = file_get_contents('https://api.bittah.com/servers');
+$cache = 'servers.json';
+$cacheTime = 5;
+if (file_exists($cache) && (filemtime($cache) > (time() - 60 * $cacheTime ))) {
+   $json = file_get_contents($cache);
+} else {
+   $json = file_get_contents('https://api.bittah.com/servers');
+   file_put_contents($cache, $json, LOCK_EX);
+}
 $array = json_decode($json, true);
 
 echo "<html>";
